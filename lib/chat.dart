@@ -17,7 +17,7 @@ class _ChatState extends State<Chat> {
     setState(() {
       if (message.isEmpty) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: Text('Message should not be empty'),
+            content: const Text('Message should not be empty'),
             action: SnackBarAction(
                 label: 'Close',
                 textColor: Colors.yellow,
