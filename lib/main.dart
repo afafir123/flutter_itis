@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:homework/hw2/homework_2.dart';
 
 import 'hw1/chat.dart';
 
@@ -69,6 +70,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => const Chat(title: 'Chat')));
                       }),
+                        InkWell(
+
+                            child:Container(
+                                height: 50,
+                                color: Colors.amber[600],
+                                child: const Center(child: Text('Api homework')
+                                )
+                            ),
+                            onTap: (){
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => const Homework2(title: 'Api')));
+                            })
                       ]
                     ),
                   ),
