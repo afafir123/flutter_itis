@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:homework/hw2/homework_2.dart';
+import 'package:homework/hw3/homework_3.dart';
 
 import 'hw1/chat.dart';
 
@@ -81,6 +82,18 @@ class _MyHomePageState extends State<MyHomePage> {
                             onTap: (){
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) => const Homework2(title: 'Api')));
+                            }),
+                        InkWell(
+
+                            child:Container(
+                                height: 50,
+                                color: Colors.amber[600],
+                                child: const Center(child: Text('Gallery')
+                                )
+                            ),
+                            onTap: (){
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => const Homework3()));
                             })
                       ]
                     ),
@@ -92,3 +105,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
